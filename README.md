@@ -1,16 +1,67 @@
-# React + Vite
+# 🧃 Fanta Soft Drink Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern **Soft Drinks Page** built using **Vite + React**, styled with **Tailwind CSS**, and powered by **GSAP** for animations and **Lenis** for smooth scrolling.
 
-Currently, two official plugins are available:
+🚀 **Live Demo:** [https://soft-drinks-page.netlify.app/](https://soft-drinks-page.netlify.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 📖 Overview
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+This project focuses on practicing modern front-end tools and animation techniques. The goal was to create a clean and engaging design while exploring smooth scrolling and motion effects.
 
-## Expanding the ESLint configuration
+> ⚙️ Currently a **work in progress** — mobile responsiveness and a few extra animations are still being improved.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠️ Tech Stack
+
+* ⚡ **Vite** – Fast build tool for modern web development
+* ⚛️ **React** – Component-based UI library
+* 🎨 **Tailwind CSS** – Utility-first CSS framework
+* 🎞️ **GSAP** – Animation library for smooth and creative motion effects
+* 🌀 **Lenis** – Smooth scrolling experience
+
+---
+
+## 🚧 Upcoming Improvements
+
+* Enhance **mobile responsiveness** 📱
+* Add more **creative GSAP animations** ✨
+* Improve overall **UI transitions** and layout polish 🎨
+
+---
+
+## 📂 Project Setup
+
+```bash
+# Clone the repository
+git clone https://github.com/AKAAravindh/Fanta-Soft_Drink-Page.git
+
+# Navigate to the project folder
+cd Fanta-Soft_Drink-Page
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm run dev
+```
+
+---
+
+## 💡 Learning Focus
+
+This project helped me strengthen my skills in:
+
+* Front-end design and layout
+* Animation integration using GSAP
+* Smooth user experience with Lenis
+* Component structuring in React
+
+---
+
+## 🔗 Links
+
+🌐 **Live Site:** [soft-drinks-page.netlify.app](https://soft-drinks-page.netlify.app/)
+💻 **GitHub Repo:** [github.com/AKAAravindh/Fanta-Soft_Drink-Page](https://github.com/AKAAravindh/Fanta-Soft_Drink-Page)
