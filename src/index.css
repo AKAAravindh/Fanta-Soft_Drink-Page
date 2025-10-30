@@ -1,1 +1,6 @@
 @import "tailwindcss";
+
+@font-face {
+  font-family: VinaSans-Regular;
+  src: url("./assets/fonts/VinaSans-Regular.ttf");
+}

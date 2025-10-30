@@ -52,11 +52,11 @@ const AboutComponent = forwardRef((props, ref) => {
     <section
       ref={ref}
       id="about"
-      className="w-full h-screen bg-amber-950 relative lg:grid lg:grid-cols-[45vw_auto] items-center gap-15 xl:gap-0"
+      className="w-full h-screen p-4 bg-amber-950 relative lg:grid lg:grid-cols-[45vw_auto] items-center gap-15 xl:gap-0"
     >
       <div
         ref={(el) => (aboutItemsRef.current[0] = el)}
-        className="w-125 aspect-[3.5/3] rounded-[50%] bottom-30 absolute left-[15vw] -translate-x-10"
+        className="w-125 aspect-[3.5/3] rounded-[50%] bottom-30 absolute left-[12vw] xl:left-[15vw] -translate-x-10"
       >
         <svg viewBox="30 35 150 130" xmlns="http://www.w3.org/2000/svg">
           <path
@@ -70,13 +70,13 @@ const AboutComponent = forwardRef((props, ref) => {
       <div className="w-[90%] xl:w-[80%] z-6">
         <h1
           ref={(el) => (rightAboutItemsRef.current[0] = el)}
-          className="text-[7rem] font-semibold tracking-tighter text-white/80 leading-none"
+          className="text-[7rem] tracking-wide text-white/80 leading-none font-[VinaSans-Regular]"
         >
           FANTA
         </h1>
         <p
           ref={(el) => (rightAboutItemsRef.current[1] = el)}
-          className="text-white/50 mt-5"
+          className="text-white/50 mt-5 text-[1.2vw]"
         >
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias, totam
           impedit eum debitis voluptatem facilis quaerat at officiis, fuga
@@ -92,7 +92,7 @@ const AboutComponent = forwardRef((props, ref) => {
         </p>
         <button
           ref={(el) => (rightAboutItemsRef.current[2] = el)}
-          className="bg-amber-600 px-12 py-3 text-xl rounded-full mt-8 text-white font-semibold"
+          className="bg-amber-600 px-12 py-3 text-xl rounded-full mt-8 text-white font-semibold cursor-pointer"
         >
           Buy Now
         </button>

@@ -2,11 +2,11 @@ import { CgMenuRightAlt } from "react-icons/cg";
 
 function NavbarComponent() {
   return (
-    <div className="w-full flex lg:grid lg:grid-cols-3 items-center justify-between text-white/80 bg-transparent py-6 px-[8%] fixed z-999 top-0 left-0">
-      <h1 className="uppercase text-4xl font-montserrat font-bold leading-none tracking-tighter">
+    <div className="w-full flex lg:grid lg:grid-cols-3 items-center justify-between text-white sm:text-white/80 bg-transparent py-6 px-[8%] fixed z-999 top-0 left-0">
+      <h1 className="uppercase text-5xl font-montserrat leading-none tracking-wide font-[VinaSans-Regular]">
         Lemonades
       </h1>
-      <nav className="text-md text-white/60 place-self-center hidden lg:block">
+      <nav className="text-lg text-white/60 place-self-center hidden lg:block">
         <ul className="flex items-center gap-8">
           {["About", "Products", "News", "Contact"].map((item, idx) => (
             <li
@@ -19,7 +19,7 @@ function NavbarComponent() {
           ))}
         </ul>
       </nav>
-      <div className="text-3xl place-self-end cursor-pointer hover:scale-110 transition-transform duration-300">
+      <div className="text-3xl place-self-end cursor-pointer hover:scale-110 transition-transform duration-300 mb-1">
         <CgMenuRightAlt />
       </div>
     </div>
