@@ -29,35 +29,39 @@ const CardsComponent = forwardRef((props, ref) => {
       },
     });
 
-    tl.to(cardsRef.current, {
-      opacity: 1,
-      duration: 2,
-      // stagger: 0.5,
-      // ease: "none",
-    }, "same");
+    tl.to(
+      cardsRef.current,
+      {
+        opacity: 1,
+        duration: 2,
+        // stagger: 0.5,
+        // ease: "none",
+      },
+      "same"
+    );
 
     tl.fromTo(
       lemonImageContainerRef.current,
       { y: 300, x: "-800px", opacity: 1, rotateZ: "360deg" },
-      { y: 0, x: 0, opacity: 1, duration: 3, rotateZ: 0, ease: "none" },
+      { y: 0, x: 0, opacity: 1, duration: 3, rotateZ: 0 },
       "same"
     );
     tl.fromTo(
       liptonImageContainerRef.current,
       { y: 300, x: "800px", opacity: 1, rotateZ: "-360deg" },
-      { y: 0, x: 0, opacity: 1, duration: 3, rotateZ: 0, ease: "none" },
+      { y: 0, x: 0, opacity: 1, duration: 3, rotateZ: 0 },
       "same"
     );
     tl.fromTo(
       spriteCanImageRef.current,
       { y: 300, x: "-500px", opacity: 1, rotateZ: "-135deg" },
-      { y: 0, x: 0, opacity: 1, duration: 3, rotateZ: 0, ease: "none" },
+      { y: 0, x: 0, opacity: 1, duration: 3, rotateZ: 0 },
       "same"
     );
     tl.fromTo(
       liptonCanImageRef.current,
       { y: 300, x: "500px", opacity: 1, rotateZ: "135deg" },
-      { y: 0, x: 0, opacity: 1, duration: 3, rotateZ: 0, ease: "none" },
+      { y: 0, x: 0, opacity: 1, duration: 3, rotateZ: 0 },
       "same"
     );
   }, []);
