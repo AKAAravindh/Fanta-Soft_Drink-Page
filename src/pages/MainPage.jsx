@@ -23,6 +23,11 @@ function MainPage() {
       orangeSliceImage,
       orangeSliceImage2,
       orangeImage2,
+      leafOne,
+      leafTwo,
+      leafThree,
+      // leafFour,
+      // leafFive,
     } = heroRef.current;
 
     gsap.to(mainContentRef.current, {
@@ -41,15 +46,40 @@ function MainPage() {
       },
     });
 
-    const tl2 = gsap.timeline({
-      scrollTrigger: {
-        trigger: cardsRef.current,
-        start: "top bottom",
-        end: "bottom bottom",
-        scrub: true,
-        // markers: true,
+    tl.to(
+      leafOne,
+      {
+        y: "80vh",
+        rotateZ: "260deg",
+        left: "40vw",
+        duration: 4,
+        ease: "none",
       },
-    });
+      "same"
+    );
+    tl.to(
+      leafTwo,
+      {
+        y: "100vh",
+        translateY: "10vw",
+        rotateZ: "250deg",
+        left: "-7vw",
+        duration: 4,
+        ease: "none",
+      },
+      "same"
+    );
+    tl.to(
+      leafThree,
+      {
+        y: "58vw",
+        rotateZ: "-135deg",
+        left: "15vw",
+        duration: 4,
+        ease: "none",
+      },
+      "same"
+    );
 
     tl.to(
       fantaCanImage,
@@ -104,6 +134,16 @@ function MainPage() {
       "same"
     );
 
+    const tl2 = gsap.timeline({
+      scrollTrigger: {
+        trigger: cardsRef.current,
+        start: "top bottom",
+        end: "bottom bottom",
+        scrub: true,
+        // markers: true,
+      },
+    });
+
     tl2.to(
       fantaCanImage,
       {
@@ -141,6 +181,44 @@ function MainPage() {
         rotate: "45deg",
         ease: "none",
         duration: 6,
+      },
+      "same2"
+    );
+
+    tl2.to(
+      leafOne,
+      {
+        y: "180vh",
+        rotateZ: "260deg",
+        left: "90vw",
+        // right: "10vw",
+        opacity: 0.6,
+        grayscale: 0.6,
+        duration: 5.5,
+        ease: "none",
+      },
+      "same2"
+    );
+    tl2.to(
+      leafTwo,
+      {
+        y: "260vh",
+        translateY: "10vw",
+        rotateZ: "370deg",
+        left: "0vw",
+        duration: 6,
+        ease: "none",
+      },
+      "same2"
+    );
+    tl2.to(
+      leafThree,
+      {
+        y: "105vw",
+        // rotateZ: "230deg",
+        left: "50vw",
+        duration: 6,
+        ease: "none",
       },
       "same2"
     );

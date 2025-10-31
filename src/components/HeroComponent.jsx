@@ -32,7 +32,6 @@ const HeroComponent = forwardRef((props, ref) => {
     orangeSliceImage2: orangeSliceImage2Ref,
     orangeImage: orangeImageRef.current,
     orangeImage2: orangeImageRef2.current,
-
     leafOne: leafOneRef.current,
     leafTwo: leafTwoRef.current,
     leafThree: leafThreeRef.current,
@@ -47,13 +46,13 @@ const HeroComponent = forwardRef((props, ref) => {
       </h1>
       <div
         ref={fantaCanImageRef}
-        className="w-70 sm:w-[20vw] sm:h-min grid sm:block place-items-center justify-center sm:translate-y-12 absolute z-5 pointer-events-none"
+        className="w-70 sm:w-[20vw] sm:h-min grid sm:block place-items-center justify-center sm:translate-y-12 absolute z-15 pointer-events-none"
       >
         <img ref={fantaCanImage2Ref} src={fantaImage} alt="Fanta Can Image" />
       </div>
       <div
         ref={orangeSliceImageRef}
-        className="w-full h-min -translate-y-45 translate-x-10 sm:bg-transparent sm:w-[25vw] sm:h-min sm:-translate-y-[10vw] absolute z-2"
+        className="w-full h-min -translate-y-45 translate-x-10 sm:bg-transparent sm:w-[25vw] sm:h-min sm:-translate-y-[10vw] absolute z-13"
       >
         <img
           ref={orangeSliceImage2Ref}
@@ -74,30 +73,40 @@ const HeroComponent = forwardRef((props, ref) => {
         alt="Coconut Leaf Image"
       />
 
-      <div className="absolute inset-0 pointer-events-none perspective-distant">
-        <img
-          className="absolute w-[14vw] top-20 right-100 -rotate-x-10 -rotate-y-30 -rotate-z-10 -z-1 opacity-100 grayscale-0"
-          src={leafOne}
-          alt="Leaf One"
-        />
-      </div>
+      {/* Top-Right */}
+      <img
+        ref={leafOneRef}
+        className="absolute w-[14vw] z-1 top-20 right-100 -rotate-x-10 -rotate-y-20 -rotate-z-10 opacity-100 grayscale-0"
+        src={leafOne}
+        alt="Leaf One"
+      />
+
       {/* <img
         className="absolute w-[9vw] top-0 left-100 -rotate-x-40 -rotate-y-20 -rotate-z-20 opacity-70"
         src={leafTwo}
         alt="Leaf Two"
       /> */}
+
+      {/* Top-Left */}
       <img
-        className="absolute w-[20vw] top-20 left-20 -rotate-x-30 -rotate-y-10 -rotate-z-10"
+        ref={leafTwoRef}
+        className="absolute w-[20vw] top-20 z-1 left-20 -rotate-x-30 -rotate-y-10 -rotate-z-10"
         src={leafThree}
         alt="Leaf Three"
       />
+
+      {/* Bottom-Left */}
       <img
-        className="absolute w-[18vw] bottom-2 left-70 rotate-x-320 -rotate-y-170 -rotate-z-190"
+        ref={leafThreeRef}
+        className="absolute w-[18vw] bottom-2 z-1 left-70 rotate-x-320 -rotate-y-170 -rotate-z-190"
         src={leafFour}
         alt="Leaf Four"
       />
+
+      {/* Bottom-Right */}
       <img
-        className="absolute w-[15vw] right-[15vw] bottom-15"
+        ref={leafFiveRef}
+        className="absolute w-[15vw] right-[15vw] bottom-15 z-1"
         src={leafFive}
         alt="Leaf Five"
       />

@@ -92,7 +92,7 @@ const AboutComponent = forwardRef((props, ref) => {
         </p>
         <button
           ref={(el) => (rightAboutItemsRef.current[2] = el)}
-          className="bg-amber-600 px-12 py-3 text-xl rounded-full mt-8 text-white font-semibold cursor-pointer"
+          className="bg-amber-600 px-14 py-4 text-xl rounded-full mt-6 text-white font-semibold cursor-pointer"
         >
           Buy Now
         </button>

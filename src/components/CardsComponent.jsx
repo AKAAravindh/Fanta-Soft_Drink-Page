@@ -66,6 +66,10 @@ const CardsComponent = forwardRef((props, ref) => {
     );
   }, []);
 
+  //
+  // Add border for cards like in the mockup
+  //
+
   return (
     <section
       ref={ref}
@@ -74,7 +78,7 @@ const CardsComponent = forwardRef((props, ref) => {
       <div className="w-full grid grid-cols-3 px-30 mt-[25vh]">
         <div
           ref={(el) => (cardsRef.current[0] = el)}
-          className="bg-[#2ea961] w-[80%] h-[60vh] place-self-center rounded-4xl flex flex-col items-center relative opacity-0"
+          className="bg-[#2ea961] w-[80%] h-[60vh] place-self-center rounded-4xl flex flex-col items-center relative opacity-0 border-6 border-white z-10"
         >
           <div className="absolute w-[90%] -top-[10vw]">
             <img
@@ -102,7 +106,7 @@ const CardsComponent = forwardRef((props, ref) => {
 
         <div
           ref={(el) => (cardsRef.current[1] = el)}
-          className="bg-[#f2a532] w-[80%] h-[60vh] place-self-center rounded-4xl flex flex-col items-center relative opacity-0"
+          className="bg-[#f2a532] w-[80%] h-[60vh] place-self-center rounded-4xl flex flex-col items-center relative opacity-0 border-6 border-white z-10"
         >
           <div className="absolute bottom-[1vw] text-center w-full">
             <h1 className="text-[2.5vw] leading-none text-white font-[VinaSans-Regular] tracking-wide">
@@ -116,7 +120,7 @@ const CardsComponent = forwardRef((props, ref) => {
 
         <div
           ref={(el) => (cardsRef.current[2] = el)}
-          className="bg-[#f76b47] w-[80%] h-[60vh] place-self-center rounded-4xl flex flex-col items-center relative opacity-0"
+          className="bg-[#f76b47] w-[80%] h-[60vh] place-self-center rounded-4xl flex flex-col items-center relative opacity-0 border-6 border-white z-10"
         >
           <div
             ref={liptonImageContainerRef}
